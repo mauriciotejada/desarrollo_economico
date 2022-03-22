@@ -274,4 +274,25 @@ Sitio web del autor: [https://debrajray.com](https://debrajray.com)
 4. Barro-Lee Educational Attainment Dataset
 
   - [https://barrolee.github.io/BarroLeeDataSet/](https://barrolee.github.io/BarroLeeDataSet/)
-  
+
+---
+
+## Grupos
+
+| Grupo | Miembros | Paper 1 | Paper 2 |
+| --- | --- | --- | ---|
+| 1 | Contreras, Carlos; Espinosa, Matías; Sanhueza, Javier; Véliz, Nicole | | |  
+| 2 | Barberán, Francisco; Espada, Esteban; Vilches, Matías; Urcullo, Javier | | |
+| 3 | Acosta, Belén; Cortes, Carolina; Díaz, Catalina; Vergara, Camila  | | |
+| 4 | De la Rosa, Catalina; Neira, Kiara; Prado, Felipe; Vásquez, Francisco | | | |
+
+
+- Mankiw, N.G., Romer, D. and D. N. Weil (1992), "A Contribution to the Empirics of Economic Growth," Quarterly Journal of Economics 107, 407 - 437. **[++ 1]**
+
+- Pritchett, L. (1997), "Divergence, Big Time," Journal of Economic Perspectives 11, 3-17. **[++ 2]**
+
+- Ray, D. (2010), "Uneven Growth: A Framework for Research in Development Economics," Journal of Economic Perspectives 24, (Summer), 45 - 60. **[++ 3]**
+
+- Sokoloff, K. and S. Engerman (2000), "History Lessons: Institutions, Factor Endowments, and Paths of Development in the New World," Journal of Economic Perspectives 14, 217 - 232. **[++ 4]**
+
+- Acemoglu, D., Johnson, S. and J. Robinson (2001), "The Colonial Origins of Comparative Development: An Empirical Investigation," American Economic Review 91, 1369 - 1401. **[++ 5]**
