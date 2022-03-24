@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Desarrollo Económico</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mauricio Tejada" />
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Desarrollo Económico
+## Crecimiento Económico II
+### Mauricio Tejada
+### Departamento de Economía, Universidad Alberto Hurtado
+### Primer Semestre 2022
+
+---
+
+
+layout: true
+
+&lt;div class="my-footer"&gt;&lt;img src="img/logo2.png" style="height: 40px;"/&gt;&lt;/div&gt; 
+
+---
+
+
+
+
+
+
+class: separator-blue, middle
+
+# El modelo de Solow (continuación)
+
+---
+
+## La ecuación fundamental del modelo de Solow
+
+**Recodemos ...**
+
+- Los agentes ahorran una fracción constante de su ingreso:
+`$$S(t)=s Y(t)$$`
+
+- El ahorro es igual a la inversión:
+`$$S(t)=I(t)$$`
+
+- La inversión incrementa el stock de capital:
+`$$K(t+1)=(1-\delta) K(t)+I(t)=(1-\delta) K(t)+s Y(t)$$`
+con `\(\delta\)` la tasa de depreciación.
+
+- Esta es la ecuación de acumulación del stock de capital.
+
+---
+
+## La ecuación fundamental del modelo de Solow
+
+- Ecuación de acumulación:
+`$$K(t+1)=(1-\delta) K(t)+s Y(t)$$`
+
+- Para convertir a magnitudes per cápita dividimos entre el trabajo: `\(k=K / L, y=Y / L\)` :
+`$$(1+n) k(t+1)=(1-\delta) k(t)+s y(t)$$` 
+(usamos `\(n\)` para indicar la tasa de crecimiento de la población).
+
+- Combinamos con la función de producción per cápita `\(y=f(k)\)` :
+**$$(1+n) k(t+1)=(1-\delta) k(t)+s f(k(t))$$**
+
+- Esta es la **ecuación fundamental** para el modelo de crecimiento. Con ella podemos estudiar la dinámica del stock de capital
+
+---
+
+## La dinámica del stock de capital
+
+.pull-left[
+**Solución de Solow**:
+
+- Ecuación fundamental:
+`$$(1+n) k(t+1)=(1-\delta) k(t)+s f(k(t))$$`
+
+- En términos de variaciones
+`$$\Delta k=\frac{(1-\delta) k(t)+s f(k(t)) - (1+n)k(t)}{1+n}$$`
+]
+
+.pull-right[
+&lt;img src="img/fig1_solow_plot.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+---
+
+## La dinámica del stock de capital
+
+.pull-left-1[
+**Convergencia desde un capital bajo:**
+
+- Si `\(k(0) &lt; k^{*}\)`, entonces:
+
+  - `\(\Delta k&gt;0\)`.
+
+  - `\(k(t) \rightarrow^{+} k^{*}\)` para cualquier `\(k(0)\)`
+  
+  - Donde: `$$\frac{f\left(k^{*}\right)}{k^{*}}=\frac{n+\delta}{s}$$`
+]
+
+.pull-right-2[
+&lt;img src="img/fig2_solow_plot_convergence.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+
+## La dinámica del stock de capital
+
+.pull-left-1[
+**Convergencia desde un capital alto:**
+
+- Si `\(k(0) &gt; k^{*}\)`, entonces:
+
+  - `\(\Delta k&lt;0\)`.
+
+  - `\(k(t) \rightarrow^{-} k^{*}\)` para cualquier `\(k(0)\)`
+  
+  - Donde: `$$\frac{f\left(k^{*}\right)}{k^{*}}=\frac{n+\delta}{s}$$`
+]
+
+.pull-right-2[
+&lt;img src="img/fig3_solow_plot_convergence2.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+
+## El estado estacionario
+
+- La **relación capital-trabajo** en estado estacionario es constante:
+`$$\frac{y^{*}}{k^{*}}=\frac{f\left(k^{*}\right)}{k^{*}}=\frac{n+\delta}{s}$$`
+
+- `\(k^{*}=K(t) / L(t)\)` es constante `\((\Delta k = 0)\)`, pero `\(K(t)\)` y `\(L(t)\)` siguen creciendo a una tasa de `\(n\)`.
+
+- Lo mismo ocurre con el producto, `\(y^{*}=f(k^{*})\)` es constante, por lo que `\(Y(t)\)` crece también a tasa `\(n\)`.
+
+  - El argumento depende fundamentalmente de los **rendimientos decrecientes de los insumos**.
+
+.bigskip[
+
+]
+
+.content-box-red[
+**Predicción del modelo de Solow 1:** 
+
+No hay crecimiento a largo plazo por encima del crecimiento de la población. Cualquier crecimiento extra sólo viene del progreso técnico, como veremos más adelante.
+]
+---
+
+## El estado estacionario: estática comparativa
+
+- ¿Cómo `\(s, n\)` y `\(\delta\)` afectan a `\(k^{*}\)`:
+
+&lt;img src="img/fig4_comparative_statics.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## El estado estacionario para el caso Cobb-Douglas
+
+- Estado estacionario `\(k^{*}\)` resuelve:
+`$$\frac{f\left(k^{*}\right)}{k^{*}}=\frac{n+\delta}{s}$$`
+
+- En el caso de la función Cobb-Douglas, `\(f(k)=A k^{\alpha}\)`, tenemos:
+`$$\frac{f\left(k^{*}\right)}{k^{*}}=A k^{* \alpha-1}=\frac{n+\delta}{s}$$`
+y por tanto:
+`$$k^{*}=\left(\frac{s A}{n+\delta}\right)^{1 /(1-\alpha)}$$`
+
+- Se puede verificar directamente las propiedades que antes establecimos geométricamente 
+
+  - Esto es, encuentre el signo de las derivadas parciales de `\(k^{*}\)` con respecto a `\(s\)`, `\(n\)` y `\(\delta\)`.
+
+---
+
+class: separator-blue, middle
+
+# Fuentes de crecimiento: exógeno vs. endógeno
+
+---
+
+## Fuentes de crecimiento
+
+**Crecimiento exógeno versus crecimiento endógeno**
+
+- Crecimiento exógeno: proviene de “fuera” del modelo.
+
+  - Progreso tecnológico continuo.
+
+- Crecimiento endógeno: proviene del “adentro” del modelo.
+
+  - Progreso tecnológico inducido
+
+  - Ausencia de rendimientos decrecientes
+  
+---
+
+## Crecimiento exógeno en el modelo de Solow: progreso tecnológico 
+
+- **Supuesto X**: Función de producción es ahora:
+`$$Y(t)=F(K(t), e(t) L(t))$$`
+donde `\(e(t)\)` es la eficiencia del trabajo, entonces `\(e(t) L(t)\)` es el trabajo efectivo.
+
+- Progreso tecnológico exógeno: 
+`$$e(t+1)=e(t)(1+\pi), \pi&gt;0$$`
+
+- Dividamos la ecuación de acumulación por `\(e(t) L(t)\)` en lugar de `\(L(t)\)` :
+`$$(1+\pi)(1+n) \hat{k}(t+1)=(1-\delta) \hat{k}(t)+s f(\hat{k}(t))$$`
+donde `\(\hat{k}=K / e L\)` está medido en **unidades efectivas per cápita**.
+
+- Todo lo demás es idéntico a los visto antes.
+
+---
+
+## El estado estacionario (en unidades efectivas de de trabajo)
+
+.pull-left[
+- En estado estacionario:
+`$$\begin{aligned}
+\frac{f\left(\hat{k}^{*}\right)}{\hat{k}^{*}}&amp;=\frac{(1+n)(1+\pi)-(1- \delta)}{s} \\
+&amp;\simeq \frac{n+\delta+\pi}{s}
+\end{aligned}$$`
+
+
+- Note que: 
+`$$y^{*}(t)=\hat{y}^{*}e(t)$$`
+entonces, el la tasa de crecimiento per cápita a largo plazo es `\(\pi\)`.
+
+]
+
+.pull-right[
+&lt;img src="img/fig5_solow_plot_convergence_with_agrowth.png" width="95%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+## El estado estacionario (en unidades efectivas de de trabajo)
+
+- En el caso de la función Cobb-Douglas, `\(\hat{y}=f\left(k^{*}\right)=A \hat{k}^{\alpha}\)`, tenemos:
+`$$\hat{k}^{*}=\left(\frac{s A}{n+\delta+\pi}\right)^{1 /(1-\alpha)}$$`
+
+- La producción de estado estacionario en unidades efectivas de trabajo es:
+`$$\hat{y}^{*}=A^{1 /(1-\alpha)}\left(\frac{s}{n+\delta+\pi}\right)^{\alpha /(1-\alpha )}$$`
+
+- Como antes, la producción real per cápita y el capital crecen a una tasa de `\(\pi\)`.
+
+---
+
+## El estado estacionario (en unidades efectivas de de trabajo)
+
+.pull-left[
+- Trayectoria de la producción per cápita en estado estacionario:
+`$$\begin{aligned}
+y^{*}(t)&amp;=\hat{y}^{*}(1+\pi)^{t} \\
+&amp;=A^{1 /(1-\alpha)}\left(\frac{s}{ n+\delta+\pi}\right)^{\alpha /(1-\alpha)}(1+\pi)^{t}
+\end{aligned}$$`
+
+- Note que fuera de la trayectoria de estados estacionario, el producto per cápita puede crecer más (o menos) que `\(\pi\)`.
+]
+
+.pull-right[
+&lt;img src="img/fig6_path_y.png" width="95%" style="display: block; margin: auto;" /&gt;
+]
+---
+
+## El estado estacionario: estática comparativa
+
+- Trayectoria de la producción per cápita en estado estacionario:
+`$$y^{*}(t)=\hat{y}^{*}(1+\pi)^{t}=A^{1 /(1-\alpha)}\left(\frac{s}{n+\delta+\pi}\right)^{\alpha /(1-\alpha)}(1+\pi)^{t}$$`
+
+&lt;img src="img/fig7_comparative_statics_path_y.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## El modelo AK, un primer paso a los modelo de crecimiento endógeno
+
+- Observemos cómo se mueve el estado estacionario con `\(\alpha\)`.
+
+  - Cuando `\(\alpha \rightarrow 1\)`, de forma que `\(y(t)=A k(t)\)`,  el modelo se comporta de manera muy diferente:
+`$$(1+n) k(t+1)=(1-\delta) k(t)+s A k(t)$$`
+
+  - Realizando manipulaciones algebraicas:
+`$$\text { Tasa de crecimiento }= g = \frac{k(t+1)-k(t)}{k(t)}=\frac{s A-(n+\delta)}{1+n}$$`
+
+- En su versión aproximada tenemos:
+`$$s A \simeq g+n+\delta$$`
+
+  - Ahora los **parámetros** tienen **efectos permanentes** sobre la tasa de crecimiento, a diferencia del modelo de Solow.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
