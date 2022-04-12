@@ -4,7 +4,7 @@
     <title>Desarrollo Económico</title>
     <meta charset="utf-8" />
     <meta name="author" content="Mauricio Tejada" />
-    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -324,6 +324,64 @@ con `\(h=H/U\)` y `\(k=K/U\)`.
   
 - Mucho mejor!! **Se requieren más componente para que la teoría logre capturar diferencias en ingreso**.  
 
+---
+
+class: separator-blue, middle
+
+# Crecimiento endógeno
+
+---
+
+## Capital físico y capital humano (nuevamente)
+
+- ¿Qué sucede si `\(\alpha+\gamma=1\)` en el modelo visto antes? En este caso:
+`$$y=A k^{\alpha} h^{1-\alpha}$$`
+
+- Implicancias (por simplicidad ignoremos el crecimiento de la población y la depreciación, la escencia no cambia):
+
+  - Definimos `\(r=h/k\)`, entonces:
+  `$$y/k=Ar^{1-\alpha} \ \ \ \ \ \ \ \ y/h=Ar^{-\alpha}$$`
+  
+  - Usando las ecuaciones de acumulación tenemos:
+`$$g_k(t)=\frac{k(t+1)-k(t)}{k(t)}=s_{k}Ar(t)^{1-\alpha}$$`
+`$$g_h(t)=\frac{h(t+1)-h(t)}{h(t)}=s_{h}Ar(t)^{-\alpha}$$`
+
+---
+
+## Capital físico y capital humano (nuevamente)
+
+- Implicancias (continuación):
+
+  - Si `\(g_k(t) \geq g_h(t)\)`, entonces `\(r=h/k \geq s_h/s_k\)`, pero como `\(r=h/k\downarrow\)`, tenemos que `\(r\rightarrow s_h/s_k\)`.
+  
+  - Si `\(g_k(t) \leq g_h(t)\)`, entonces `\(r=h/k \leq s_h/s_k\)`, pero como `\(r=h/k\uparrow\)`, tenemos que `\(r\rightarrow s_h/s_k\)`.
+  
+  - Usando lo anterior:
+`$$r=\frac{s_h}{s_k} \Rightarrow g_k(t)=g_h(t)$$`
+
+  - Usando la función de producción:
+  `$$y=A k^{\alpha} h^{1-\alpha}=y=\frac{A}{r^{\alpha}} h \frac{h+k}{h+k} = A\frac{r^{1-\alpha}}{1+r}\kappa = \tilde{A}\kappa$$`
+  con `\(\kappa=h+k\)`.
+  
+  - Si bien, la función de producción tiene retornos marginales decrecientes para `\(k\)` y `\(y\)`, presenta retornos marginales constantes para una definición amplia de capital `\(\kappa\)`. **Este modelo presenta crecimiento sostenido como el AK**.
+  
+---
+
+## ¿Qué logramos con este ejercicio?
+
+**La convergencia contradice los hechos. Pero ...**
+
+- La variación observada en el ingreso per cápita se ajusta a las variaciones en el ahorro.
+
+- Usando un modelo que tiene tanto capital físico como humano tenemos las siguientes predicciones
+
+  - **La convergencia condicional (una vez se controla por el capital humano)**: Condicionando por el nivel de capital humano, los países pobres tienden a crecer más deprisa.
+  
+  - **La divergencia condicional (una vez controlado por el nivel inicial de ingreso per
+cápita)**: Condicionando por el nivel de renta per cápita, los países que tienen más capital
+humano crecen más deprisa.
+
+**A seguir**: teorías de la divergencia.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

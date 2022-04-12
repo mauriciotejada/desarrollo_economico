@@ -361,15 +361,34 @@ class: separator-blue, middle
 - ¿Qué sucede si $\alpha+\gamma=1$ en el modelo visto antes? En este caso:
 $$y=A k^{\alpha} h^{1-\alpha}$$
 
-- Implicancias:
+- Implicancias (por simplicidad ignoremos el crecimiento de la población y la depreciación, la escencia no cambia):
 
   - Definimos $r=h/k$, entonces:
   $$y/k=Ar^{1-\alpha} \ \ \ \ \ \ \ \ y/h=Ar^{-\alpha}$$
   
   - Usando las ecuaciones de acumulación tenemos:
-$$\qquad(1+n) k(t+1)=\left(1-\delta_{k}\right) k(t)+s_{k} y(t)$$
-$$(1+n) h(t+1)=\left(1-\delta_{h}\right) h(t)+s_{h} y(t)$$
+$$g_k(t)=\frac{k(t+1)-k(t)}{k(t)}=s_{k}Ar(t)^{1-\alpha}$$
+$$g_h(t)=\frac{h(t+1)-h(t)}{h(t)}=s_{h}Ar(t)^{-\alpha}$$
 
+---
+
+## Capital físico y capital humano (nuevamente)
+
+- Implicancias (continuación):
+
+  - Si $g_k(t) \geq g_h(t)$, entonces $r=h/k \geq s_h/s_k$, pero como $r=h/k\downarrow$, tenemos que $r\rightarrow s_h/s_k$.
+  
+  - Si $g_k(t) \leq g_h(t)$, entonces $r=h/k \leq s_h/s_k$, pero como $r=h/k\uparrow$, tenemos que $r\rightarrow s_h/s_k$.
+  
+  - Usando lo anterior:
+$$r=\frac{s_h}{s_k} \Rightarrow g_k(t)=g_h(t)$$
+
+  - Usando la función de producción:
+  $$y=A k^{\alpha} h^{1-\alpha}=y=\frac{A}{r^{\alpha}} h \frac{h+k}{h+k} = A\frac{r^{1-\alpha}}{1+r}\kappa = \tilde{A}\kappa$$
+  con $\kappa=h+k$.
+  
+  - Si bien, la función de producción tiene retornos marginales decrecientes para $k$ y $y$, presenta retornos marginales constantes para una definición amplia de capital $\kappa$. **Este modelo presenta crecimiento sostenido como el AK**.
+  
 ---
 
 ## ¿Qué logramos con este ejercicio?
@@ -378,10 +397,12 @@ $$(1+n) h(t+1)=\left(1-\delta_{h}\right) h(t)+s_{h} y(t)$$
 
 - La variación observada en el ingreso per cápita se ajusta a las variaciones en el ahorro.
 
-- Usando un modelo que tiene tanto capital físico como humano.
+- Usando un modelo que tiene tanto capital físico como humano tenemos las siguientes predicciones
 
-**Eso no quiere decir que podamos explicar esas variaciones para empezar.**
+  - **La convergencia condicional (una vez se controla por el capital humano)**: Condicionando por el nivel de capital humano, los países pobres tienden a crecer más deprisa.
+  
+  - **La divergencia condicional (una vez controlado por el nivel inicial de ingreso per
+cápita)**: Condicionando por el nivel de renta per cápita, los países que tienen más capital
+humano crecen más deprisa.
 
-- Tortugas (?!)
-
-- A seguir: teorías de la divergencia.
+**A seguir**: teorías de la divergencia.
