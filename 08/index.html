@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Desarrollo Económico</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mauricio Tejada" />
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Desarrollo Económico
+## Trampas para el Desarrollo III
+### Mauricio Tejada
+### Departamento de Economía, Universidad Alberto Hurtado
+### Primer Semestre 2022
+
+---
+
+
+layout: true
+
+&lt;div class="my-footer"&gt;&lt;img src="img/logo2.png" style="height: 40px;"/&gt;&lt;/div&gt; 
+
+---
+
+
+
+
+
+
+class: separator-blue, middle
+
+# Dependencia histórica
+
+---
+
+## Dependencia histórica
+
+Murray Gell-Mann, Premio Nobel de Física 1969: 
+
+&gt; Jorge Luis Borges escribió una historia sobre alguien que hizo un modelo con posibles historias alternativas para el universo, en forma de un jardín de senderos que se bifurcan... La historia que realmente se observa está co-determinada por simples leyes fundamentales y por una secuencia inconcebiblemente larga de accidentes o eventos fortuitos, que pueden ocurrir de varias maneras y sólo se puede predecir de antemano las probabilidades de ocurrencia de los diferentes resultados... algunos de estos accidentes producen una gran cantidad de impacto en el futuro. A esos los podemos llamar **accidentes congelados**. 
+
+---
+
+## Dependencia histórica
+
+- **Retroalimentación macroeconómica**
+
+  - Resultados que afectan parámetros aparentemente exógenos, como `\(s\)` o `\(n\)`.
+
+  - Desigualdad autosostenida.
+
+- **Rendimientos crecientes a escala**
+
+  - Costos fijos para iniciar un negocio o emprendimiento. 
+  
+  - Aprendizajes en la práctica (*learning by doing*).
+
+- **Sesgos por el statu quo**
+
+  - Afecta la dirección del cambio.
+
+- **Industrias extractivas e instituciones coloniales**
+
+  - Influencia sobre los esquemas políticos y legales posteriores.
+
+---
+
+## Retroalimentación macroeconómica: Endogeneidad de `\(s\)`
+
+.pull-left-2[
+&lt;img src="img/fig1.png" width="85%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right-1[
+- .blue[Línea Azul]: Cómo se ve afectado `\(s\)` por el ingreso en estado estacionario `\(y^{*}\)`.
+
+  - bajo ingreso (subsistencia) `\(\Rightarrow\)` bajo ahorro.
+
+  - ingreso medio (aspiraciones) `\(\Rightarrow\)` aumenta el ahorro.
+
+  - ingreso alto (aspiraciones alcanzadas) `\(\Rightarrow\)` baja el ahorro.
+
+- .red[Línea Roja]: cómo el ingreso `\(y^{*}\)` está determinado por `\(s\)`.
+
+  - Modelo de Solow.
+]
+---
+
+## Retroalimentación macroeconómica: Endogeneidad de `\(n\)`
+
+.pull-left-2[
+&lt;img src="img/fig2.png" width="85%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right-1[
+- .blue[Línea Azul]: Cómo `\(n\)` se ve afectado por el ingreso de estado estacionario `\(y^{*}\)`.
+
+  - bajo ingreso `\(\Rightarrow\)` mortalidad alta y natalidad alta.
+  
+  - ingreso medio `\(\Rightarrow\)` mortalidad cae y natalidad se ajusta lentamente.
+  
+  - ingreso alto `\(\Rightarrow\)` mortalidad baja y natalidad baja.
+
+- .red[Línea Roja]: Cómo `\(y^{*}\)` está determinado por `\(n\)`. 
+
+  - Modelo de Solow. 
+]
+---
+
+## Rendimientos crecientes: Modelo de crecimiento
+
+- Función de producción: `\(y=f(k)\)`, pero `\(f\)` tiene dos tecnologías integradas.
+
+- `\(f_{1}(k)=A k^{\alpha}\)` y `\(f_{2}(k)=B k^{\beta}-C\)`, con `\(B \gg A\)` y `\(C\)` es un costo hundido.
+
+&lt;img src="img/fig3.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Rendimientos crecientes: Iniciando un negocio
+
+.pull-left[
+&lt;img src="img/fig4.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+**Ejemplo**: Empresa establecida (digamos autos convencionales) vs. Empresa nueva que busca entrar (nuevo autos híbridos).
+
+- **Clave**: Retornos Crecientes a Escala `\(\rightarrow\)` La escala permite reducir costos.
+
+- Cuando una empresa entra tienen que soportar pérdidas por el periodo de **transición**. Si no lo hace no habrá entrada.
+
+
+- Razones:
+
+  - Altos costos para escala pequeña. 
+
+  - Cambio gradual.
+
+  - Mercados de capitales imperfectos.
+]
+---
+
+## Rendimientos crecientes: Producción circular
+
+- Función de producción:
+`$$Y=\left[Q_{1}^{\alpha}+Q_{2}^{\alpha}+\cdots+Q_{n }^{\alpha}\right]^{1 / \alpha}$$`
+
+  - El presupuesto de capital disponible es de `\(K\)`.
+
+  - Una unidad de `\(K\)` hace una unidad de cualquier intermedio: `\(Q_i=K\)`.
+
+- Función de producción indirecta: dividir `\(K\)` en partes iguales entre `\(n\)`, por lo que:
+`$$Y=\left[n\left(\frac{K}{n}\right)^{\alpha}\right]^{1 / \alpha}=n^{(1-\alpha) / \alpha} K$$`
+
+  - La productividad total de los factores (PTF) aumenta con el número de intermediarios.
+
+- Imagine un costo fijo a pagar por cada nuevo bien intermedio utilizado.
+
+  - Producción a pequeña escala `\(\Rightarrow\)` pocos productos intermedios `\(\Rightarrow\)` PTF es baja `\(\Rightarrow\)` ingresos bajos `\(\Rightarrow\)` demanda baja `\(\Rightarrow\)` producción a pequeña escala
+
+---
+
+## Sesgo por Status Quo
+
+- **Fernández y Rodrik (1991)**: Piensen en un proyecto que debe ser votado para su aprobación. Todo proyecto tiene ganadores y perdedores. 
+
+- Suponga que no hay un mecanismo de compensación de ganadores a perdedores. 
+
+- El **proyecto propuesto** paga `\(+1\)` a un beneficiario y `\(-1\)` a un perdedor. Si el proyecto no pasa todos quedan con 0.
+
+- Se sabe que `\(70\%\)` serán beneficiarios. Casos:
+
+  1. Identidad del beneficiario desconocida: todos votan sí, proyecto pasa.
+  `$$0.7(1) + 0.3(-1) = 0.4 &gt; 0$$`
+
+  2. Se conoce la identidad del beneficiario: `\(70 \%\)` vote sí, se aprueba el proyecto.
+
+  3. Identidad del beneficiario parcialmente conocida: Digamos que el `\(45\%\)` sabe que se beneficiará. ¡Entonces el resto vota no!
+  `$$0.25(1) + 0.75(-1) = -0.5 &lt; 0$$`
+
+- El proyecto (una vez dentro) será rechazado. Pero si no existe, no se vota.
+
+---
+
+## Instituciones
+
+.content-box-red[
+**Instituciones**: Reglas ambientales (formales o informales) para la conducción y ordenamiento de relaciones económicas, sociales y políticas.
+]
+
+Ejemplos:
+
+- Protegen los derechos de propiedad (aplicación de la ley).
+
+- Proporcionan pensiones de vejez (seguridad social).
+
+- Proporcionan un seguro contra una crisis bancaria (Banco Central, Super. de Bancos).
+
+- Habilitan participaciones financieras en empresas (el mercado de valores).
+
+- Garantizan que los contratos se cumplirán (tribunales).
+
+- Supervisan elecciones seguras y justas (Comisiones Electorales, Ej. SERVEL).
+
+- Generan normas de reciprocidad y sanciones (informales).
+
+---
+
+## Instituciones
+
+- Las **buenas instituciones** económicas promueven la inversión y el crecimiento
+
+- Pero la creación de instituciones está profundamente condicionada por la historia.
+
+- Las **malas instituciones** (como las autocracias) se autogeneran o generan peores
+instituciones (dictaduras), ya que los beneficiarios luchan por mantener sus beneficios.
+
+- Sokoloff y Engerman (2000) a propósito de América del Norte y América del Sur:
+
+&gt; Voltaire, por ejemplo, pensó que el conflicto entre franceses y británicos en América del Norte, durante la Guerra de los Siete Años (1756-63), era una locura y lo caracterizó como dos países luachando por unos pocos acres de nieve. Los británicos victoriosos participarían más tarde en un acalorado debate público sobre qué territorio debe tomarse de los franceses como reparación, la isla caribeña de Guadalupe (con una superficie de 563 millas cuadradas) o Canadá!!
+
+---
+
+## Instituciones
+
+**América del Sur**: 
+
+- Enormes riquezas minerales, mucha mano de obra nativa.
+
+- Economías extractivas (derechos mineros, tributos, etc.).
+
+- Economías de plantación con mano de obra esclava; pocos grandes terratenientes.
+
+- Derechos cedidos en forma controlada y restringida. 
+
+  - Ejemplo: estrictas restricciones a la migración al Nuevo Mundo.
+
+  - `\(\Rightarrow\)` élite desigualmente situada que trató de aferrarse al poder.
+
+- Restricciones al comercio y participación política.
+
+  - Ejemplo: era necesario poseer una gran cantidad de tierra para poder votar.
+
+---
+
+## Instituciones
+
+**América del Norte**: EE. UU. y Canadá
+
+- Sin grandes cantidades de mano de obra nativa.
+
+- Sin clima apropiado para plantaciones de azúcar excepto en el Sur (pero incluso ahí, el tamaño de las plantaciones de azúcar era relativamente pequeño).
+
+- Trabajadores de ascendencia europea, igualdad en el capital humano.
+
+- Latifundios relativamente pequeños, inmigración abierta.
+
+- Dificultad para crear instituciones con poder político desigual.
+
+- Votación restringida al principio, pero la franquicia se extendió rápidamente. 
+  
+---
+
+## Instituciones
+  
+- Sokoloff y Engermann (2000) concluyen:
+
+&gt; "Estas primeras diferencias en el grado de desigualdad entre las economías del Nuevo Mundo pueden haber sido preservadas por los tipos de instituciones económicas y por los efectos de esas instituciones sobre el acceso a oportunidades económicas. Este camino de desarrollo institucional puede haber afectado el crecimiento económico. Donde había una desigualdad extrema, y las instituciones favorecían a las élites y limitaban el acceso de gran parte de la población a las oportunidades económicas, los miembros de las élites podían mantener mejor su estatus de élite a lo largo del tiempo, pero a costa de que la sociedad no se diera cuenta del potencial económico de los grupos desfavorecidos... [E]stos sesgos en los caminos del desarrollo institucional probablemente explican en gran medida la persistencia de la desigualdad a largo plazo en América Latina y en otras partes del Nuevo Mundo".
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
