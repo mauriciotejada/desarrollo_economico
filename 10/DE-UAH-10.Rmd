@@ -480,20 +480,16 @@ knitr::include_graphics("img/figura_10.png")
 
 ## Introducción a los mercados de capitales imperfectos
 
-- En general:
+- En general, un individuo pagara su deuda si:
+$$S(1+r) \leq W(1+r)+F+\lambda\left\{f(\ell)-w_{t} \ell\right\}$$
+o alternativamente:
 $$W \geq S-\frac{F+\lambda\{f(\ell)-w \ell\}}{1+r}$$
 donde:
 
   - $W=$ riqueza.
-
   - $S=$ costos de iniciar el negocio.
-
   - $F=$ cárcel/multas.
-
   - $w=$ salario.
-
   - $\ell=$ número de trabajadores.
-
   - $r=$ tasa de interés del crédito.
-
-  - $f(\ell)=$ Producción
+  - $f(\ell)=$ Función de producción
