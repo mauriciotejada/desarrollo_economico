@@ -345,3 +345,155 @@ $$r=\frac{[x(t) / x(0)]^{1 / t}(1+g)-1}{s_{R}}$$
   - Estimación de Dynan et al $s_{R}$: 51%
 
 - Obtenemos $r$: 11.4%.
+
+---
+
+## ¿Qué explicaría las altas tasa de retorno para los ricos?
+
+.bigskip[
+
+]
+
+.bigskip[
+
+]
+**Dos grupos de respuestas**: 
+
+- Los ricos tienen acceso a **mejor información** sobre las tasas de retorno
+
+- Los ricos tienen **acceso físico** a mejores tasas de retorno.
+
+
+---
+
+## Información: Invirtiendo en inversión
+
+- A mayor riqueza financiera, **mayor esfuerzo** en encontrar buenas tasas de retorno.
+
+- Un modelo simple: El individuo maximiza la utilidad a lo largo de toda la vida.
+$$\sum_{t=0}^{\infty} \delta^{t} \frac{c_{t}^{1-\sigma}}{1-\sigma}$$
+donde $0<\sigma<1$ es el coeficiente de aversión relativa al riesgo, $0<\delta<1$ es el factor de descuento.
+
+- La restricción presupuestaria es:
+$$c_{t}=\left(1+r_{t-1}\right) F_{t-1}+w\left(1-e_{t}\right)-F_{t},$$
+donde $F$ es la riqueza financiera, $w$ es el ingreso, y $e$ es el esfuerzo realizado en buscar un mejor retorno (en horas) de tal forma que la tasa de retorno $r$ se define como:
+$$r_{t}=\beta e_{t}$$
+
+---
+
+## Información: Invirtiendo en inversión
+
+- El lagrangiano en valor presente del problema es:
+$$L = \sum_{t=0}^{\infty} \delta^{t} \left[   \frac{c_{t}^{1-\sigma}}{1-\sigma} + \lambda_t (\left(1+\beta e_{t-1}\right) F_{t-1}+w\left(1-e_{t}\right)-F_{t} - c_t) \right]$$
+
+- Los individuos usan la riqueza $F_{t}$ para igualas los beneficios marginales en el tiempo:
+$$\left(\frac{c_{t+1}}{c_{t}}\right)^{\sigma}=\delta\left(1+r_{t}\right)$$
+
+- Los individuos usan el esfuerzo $e_{t}$ para igualas los beneficios marginales en el tiempo:
+$$\left(\frac{c_{t+1}}{c_{t}}\right)^{\sigma}=\delta \frac{F_{t}}{w} \beta .$$
+
+- **Proposición**. Individuos con un ratio $F$ a $w$ alto obtienen un mayor retorno y crecen más rápido. Para ver esto combine las dos ecuaciones anteriores: 
+$$1+r_{t}=\frac{F_{t}}{w} \beta .$$
+
+
+---
+
+## Información: Invirtiendo en inversión
+
+- Alternativamente podemos tener un problema tipo "cake eating". Considere la restricción:
+$$c_{t}=\left(1+r_{t-1}\right) F_{t-1}+w-z_{t}-F_{t},$$
+donde $r_{t}=\gamma z_{t}$ (por ejemplo, pagar a un experto para que investigue donde encontrar los retornos más altos). Todo lo demás queda igual.
+
+- En este caso, el individuo elige $z$ de tal forma de igualar los beneficios marginales:
+$$\left(\frac{c_{t+1}}{c_{t}}\right)^{\sigma}=\delta F_{t} \gamma$$
+
+- **Proposición**. Individuos con una riqueza $F$ alta obtienen tasas de retorno mayores. Contrastes esta proposición con la que estudiamos antes.
+
+---
+
+## Acceso: Riqueza y tasas de retorno
+
+¿Por qué la **riqueza** podría afectar el **acceso** a altas tasas de rendimiento?
+
+- Actitudes para tomar riesgos
+
+- Acceso a mercados de valores (bolsa)
+
+- Política (recuerde Sokoloff-Engerman sobre América Latina)
+
+- Mercados de capitales imperfectos:
+
+  - Incapacidad para aprovechar las oportunidades con los costos de poner en marcha un negocio.
+
+*Nos concetraremos en este último elemento*
+
+---
+
+## Acceso: Riqueza y tasas de retorno
+
+Analizaremos la decisión de invertir en un proyecto considerando el problema garantía de crédito - repago de la deuda.
+
+Por Ejemplo:
+
+- Suponga que mis activos actuales (por ejemplo propiedades, cuentas, etc) son $100,000$ y que los costos de iniciar el negocio son $200,000$.
+
+- La empresa contrata a $50$ trabajadores, les paga $5,000$ a cada uno
+
+- Los ingresos por ventas una vez andando el negocio son $500,000$.
+
+- Después de un período, pagar la tasa de interés del crédito $10\%$.
+
+- Si no se paga la deuda (*default*) entonces: 
+
+  - La mitad de las ganancias son incautadas.
+  
+  - El valor esperado de pasar tiempo en la cárcel $60,000$
+
+---
+
+## Introducción a los mercados de capitales imperfectos
+
+- **Pagar o no pagar, ahí está el dilema**
+
+```{r fig9, echo=FALSE, out.width="40%"}
+knitr::include_graphics("img/figura_9.png")
+```
+
+- Pagar si riqueza/garantía es $100,000$ 
+
+---
+
+## Introducción a los mercados de capitales imperfectos
+
+- **Pagar o no pagar, ahí está el dilema**
+
+```{r fig10, echo=FALSE, out.width="40%"}
+knitr::include_graphics("img/figura_10.png")
+```
+
+
+- Realizar un default si riqueza/garantía es $20,000$
+
+- Note que estamos hablando de la misma persona en ambos casos.
+
+---
+
+## Introducción a los mercados de capitales imperfectos
+
+- En general:
+$$W \geq S-\frac{F+\lambda\{f(\ell)-w \ell\}}{1+r}$$
+donde:
+
+  - $W=$ riqueza.
+
+  - $S=$ costos de iniciar el negocio.
+
+  - $F=$ cárcel/multas.
+
+  - $w=$ salario.
+
+  - $\ell=$ número de trabajadores.
+
+  - $r=$ tasa de interés del crédito.
+
+  - $f(\ell)=$ Producción
