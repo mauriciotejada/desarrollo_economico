@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Desarrollo Económico</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mauricio Tejada" />
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Desarrollo Económico
+## Mercados de Crédito
+### Mauricio Tejada
+### Departamento de Economía, Universidad Alberto Hurtado
+### Primer Semestre 2022
+
+---
+
+
+layout: true
+
+&lt;div class="my-footer"&gt;&lt;img src="img/logo2.png" style="height: 40px;"/&gt;&lt;/div&gt; 
+
+---
+
+
+
+
+
+
+class: separator-blue, middle
+
+# Introducción
+
+---
+
+## Mercados de crédito
+
+**Sector Formal**:
+
+- Bancos estatales o comerciales.
+
+- Requieren garantía/colateral y plan de negocios.
+
+- Por lo general otorgan créditos a empresas registradas o a pequeñas empresas.
+
+- Usualmente cobran las tasas de interés más bajas.
+
+- Suelen dar crédito dirigido a "sectores prioritarios": exportaciones, agricultura, pequeñas empresas.
+
+---
+
+## Mercados de crédito
+
+**Sector informal**:
+
+- Prestamistas, comerciantes, terratenientes, tiendas de barrio, etc.
+
+- Mejor información, mejores capacidades para hacer cumplir las obligaciones (multimercado).
+
+- Habilidades específicas para tomar ciertos tipos de garantías/colaterales.
+
+- Puede descontar las distorsiones a través del contacto multimercado
+
+**Organizaciones cuasi-formales**:
+
+- ONGs de microfinanzas.
+
+- A veces utilizan la responsabilidad del grupo para evitar incumplimientos/default.
+
+- Cronogramas de pago rígidos.
+
+- En general usados para financiar capital de trabajo en lugar de préstamos para capital fijo.
+
+---
+
+## Imperfecciones en los mrcados de crédito
+
+- **Garantía limitada implica responsabilidad limitada**.
+
+  - Afecta a quien busca crédito (**selección adversa**).
+
+  - Afecta cómo se usa el crédito (**riesgo moral**).
+
+  - Afecta los incentivos de pago (**default estratégico**).
+
+  - Afecta a las combinaciones prestamista-prestatario (**segmentación**).
+
+- **Un ejemplo** concreto:
+
+  - Suponga dos proyectos `\(A\)` y `\(B\)`, costo inicial 100.000.
+
+  - Tasas de rendimiento 15% y 20% (ingresos 115.000 y 120.000).
+
+  - Tasa de interés bancaria 10%.
+
+  - Perfecta coincidencia de intereses entre banco y prestatario (ambos quedan felices con el proyecto `\(B\)`).
+
+---
+
+## Imperfecciones en los mrcados de crédito
+
+- Ejemplo, cont...
+
+  - Ahora cambiemos el proyecto `\(A\)`: 230.000 con prob. `\(1/2\)` y 0 con prob `\(1/2\)`.
+
+  - El rendimiento esperado es el mismo que antes: 15%.
+
+  - Asumir responsabilidad limitada (efectivamente lo mismo que garantía limitada).
+
+  - Ahora el banco prefiere estrictamente el Proyecto `\(B\)`.
+
+  - ¡Pero el prestatario prefiere estrictamente el Proyecto `\(A!\)` (¿Por qué?)
+
+  - El problema desaparece si el prestatario paga completamente en cada contingencia.
+
+- Dos **interpretaciones** del ejemplo:
+
+  - El banco atrae prestatarios tipo `\(A\)` (**selección adversa**)
+
+  - El prestatario desvía dinero para proyectos tipo `\(A\)` (**riesgo moral**)
+
+---
+
+## Premio por riesgo
+
+- **¿Qué sucede si el banco cobra tasas de interés más altas para compensar el riesgo?**
+
+  - Suponga que `\(p\)` es la prob. pagar, `\(r\)` es la tasa de interés, e `\(i\)` es la tasa libre de riesgo:
+
+  - Entonces `\(p(1+r)=1+i\)`, o
+`$$r=\frac{1+i}{p}-1.$$`
+¡El problema es que `\(r\)` afecta la probabilidad de pago!
+
+- **Discusión**: ¿Podría ser una estrategia deliberada por parte del prestamista?
+
+  - Algunas definiciones: Valoración de la garantía por parte del prestamista  `\(V_{\ell}\)`, valoración de la garantía por parte del prestatario `\(V_{b}\)`.
+
+  - El prestatario prefiere pagar si `$$L(1+i)&lt;V_{b}+F$$`
+  donde `\(L=\)` es el préstamo, `\(i=\)` tasa de interés, `\(F=\)` es el costo fijo.
+
+---
+
+## Premio por riesgo
+
+- **Discusión** cont...
+
+- El prestamista quiere que le devuelvan su dinero si:
+`$$L(1+i)&gt;V_{\ell}$$`
+
+- Por lo tanto, el reembolso del préstamo es de interés de ambas partes si:
+`$$V_{b}+F&gt;V_{\ell}$$`
+
+- Por otro lado, si se cumple que:
+`$$V_{b}+F&lt;V_{\ell}$$`
+entonces la tasa de interés puede ajustarse para facilitar la incautación de la garantía/colateral.
+
+- **La elección de la tasa de interés afecta el default**.
+
+---
+
+class: separator-blue, middle
+
+# Selección adversa
+
+---
+
+## Selección adversa y los proyectos de los prestatarios
+
+- Suponga que los prestatarios difieren en el nivel de "riesgo" que están dispuestos a asumir.
+
+  - El retorno del proyecto `\(R\)` varía según el riesgo del mismo; en promedio no existe diferencia en retornos.
+
+- Costo inicial del proyecto: `\(B\)`, préstamo a tasa `\(r\)`, garantía `\(C\)`.
+
+  - **Responsabilidad limitada** en el pago de préstamos; pagar si:
+`$$R+C \geq(1+r) B$$`
+
+  - Entonces, el **rendimiento del prestatario** si el proyecto paga `\(R\)` está dado por
+`$$\pi(R, r) \equiv \max \{R-(1+r) B,-C\}$$`
+
+  - y el **rendimiento del prestamista** está dado por
+`$$\rho(R, r) \equiv \min \{R+C, B(1+r)\}$$`
+
+---
+
+## Selección adversa y los proyectos de los prestatarios
+
+- El pago esperado del prestatario aumenta con el riesgo, lo opuesto sucede para el prestamista.
+
+&lt;img src="img/figura_1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+- Si el nivel de riesgo no es observable, la calidad del prestatario cae con `\(r\)`.
+
+---
+
+## Selección adversa y los proyectos de los prestatarios
+
+- El retorno del prestatario es típicamente no monotónico in `\(r\)`.
+
+&lt;img src="img/figura_2.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+- La tasa de interés está acotada por `\(r^{*}\)`, aún cuando los prestamistas estuvieran dispuestos a pagar más.
+
+---
+
+class: separator-blue, middle
+
+# Riego moral
+
+---
+
+## Resgo moral en la selección de proyectos por parte de prestatarios
+
+- Los **prestatarios** son todos del **mismo tipo**, pero eligen entre **diferentes proyectos**.
+
+  - Proyectos indexados por `\(\theta\)`, riesgo del proyecto.
+
+  - El proyecto renta `\(R(\theta)\)` con prob `\(p(\theta)\)`, Y  `\(0\)` con prob `\(1-p(\theta)\)`.
+
+  - Ordenamos los proyectos de manera que `\(R(\theta)\)` aumente y `\(p(\theta)\)` disminuya.
+
+  - Cada proyecto requiere el mismo monto de préstamo de `\(B\)`.
+
+- Un prestatario con garantía `\(C\)`, que enfrenta `\(r\)` y elige `\(\theta\)` para maximizar
+`$$\underbrace{p(\theta)[R(\theta)-B(1+r)]}_{\text {Éxito}} \underbrace{-[1-p(\theta)] C}_{\text {Falla }}$$`
+donde `\(R(\theta)\)` excede `\(B(1+r)\)`, de lo contrario no hay préstamo.
+
+- Este problema determina el riesgo `\(\theta(C, r)\)` en función de `\(C\)` y `\(r\)`.
+
+---
+
+## Resgo moral en la selección de proyectos por parte de prestatarios
+
+.content-box-red[
+**Teorema 1** `\(\theta(C, r)\)` is decreciente en `\(C\)` y creciente en `\(r\)`. Esto es: la garantía/colateral induce un comportamiento seguro; la tasa de interés induce un comportamiento riesgoso.
+]
+
+- Sea `\(Z=B(1+r)-C\)`, entonces `\(\theta\)` maximiza
+`$$p(\theta)[R(\theta)-Z]-C,$$`
+
+- Sea `\(Z_{1}&gt;Z_{2}\)` y sean `\(\theta_{1}\)` y `\(\theta_{2}\)` dos máximos únicos para `\(Z_1\)` y `\(Z_2\)`:
+
+  - Entonces `\(p\left(\theta_{1}\right)\left[R\left(\theta_{1}\right)-Z_{1}\right]-C_{1}&gt;p\left(\theta_{2}\right)\left[R\left(\theta_{2}\right)-Z_{1}\right]-C_{1}\)`,
+
+  - mientras que `\(p\left(\theta_{2}\right)\left[R\left(\theta_{2}\right)-Z_{2}\right]-C_{2}&gt;p\left(\theta_{1}\right)\left[R\left(\theta_{1}\right)-Z_{2}\right]-C_{2}\)`.
+
+- Sumando estas dos desigualdades tenemos que:
+`$$\left[p\left(\theta_{1}\right)-p\left(\theta_{2}\right)\right]\left(Z_{1}-Z_{2}\right)&lt;0$$`
+
+- Por tanto `\(p(\theta)\)` es decrecientes (el riesgo aumenta) con `\(Z\)`. 
+
+---
+
+## Resgo moral en la selección de proyectos por parte de prestatarios
+
+&lt;img src="img/figura_3.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+- Como antes, mientras `\(r\)` cambia, el retorno de los prestamistas se mueve de forma no monotónica.
+
+---
+
+## Resgo moral en la selección de proyectos por parte de prestatarios
+
+&lt;img src="img/figura_4.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+- Podría no existir mercado de crédito activo (racionamiento del crédito). 
+
+---
+
+## Resgo moral en la selección de proyectos por parte de prestatarios 
+
+&lt;img src="img/figura_5.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+- El equilibro se dará en la intersección más baja `\(r^{*}\)`.
+
+---
+
+## Resgo moral en la selección de proyectos por parte de prestatarios 
+
+&lt;img src="img/figura_6.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+- La tasa de interés de equilibrio caerá a medida que el colateral aumente.
+
+- Esto no ocurrirá en el caso de poder de mercado por parte de los prestatarios. 
+
+---
+
+## Riesgo moral y sobrendeudamiento
+
+- El **esfuerzo**, que es costoso, puede influir en las probabilidades de éxito.
+
+  - Costo inicial `\(B\)`, el resultado es `\(Q\)` (bueno) o 0 (malo).
+
+  - La probabilidad de un buen resultado es `\(p(e)\)`, donde `\(e=\)` esfuerzo del agente.
+
+- **Si el agente se autofinancia**, elije `\(e\)` para maximizar
+`$$\text{Rentabilidad Privada = Excedente Social }=p(e) Q-e-B(1+i)$$`
+donde `\(B\)` es el costo inicial e `\(i\)` es la tasa de retorno libre de riesgo.
+
+- Asuma elección única `\(e^{*}\)` descrita por la condición de primer orden
+`$$p^{\prime}\left(e^{*}\right)=\frac{1}{Q}$$`
+
+- Este es el nivel de esfuerzo eficiente u óptimo.
+
+---
+
+## Riesgo moral y sobrendeudamiento
+
+- Financiamiento vía deuda: `\(R=(1+r) B\)` es deuda total, `\(C&lt;B\)` es la garantía.
+
+  - La elección del esfuerzo óptimo del prestatario frente a una deuda `\(R\)` está dado por:
+`$$\max _{e} p(e)(Q-R)-[1-p(e)] C-e$$`
+
+- La elección óptima `\(\hat{e}\)` está definida por la condición de primer orden:
+`$$p^{\prime}(e)=\frac{1}{Q+C-R}$$`
+
+  - Note que `\(\hat{e}&lt;e^{*}\)`.
+
+  - Además, `\(\hat{e}\)` es decreciente en `\(R\)` y creciente en `\(C\)`.
+
+- Este es el **sobreendeudamiento**.
+
+  - El rendimiento del prestamista está dado por `\(\pi=p(e) R+[1-p(e)] C-B(1+i)\)`, donde `\(i\)` es la tasa libre de riesgo.
+
+---
+
+## Dueda y esfuerzo en equilibrrio
+
+&lt;img src="img/figura_7.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+.content-box-red[
+**Teorema 2**: Los equilibrios con ganancias más altas para los prestamistas involucraban tasas de interés más altas (incluso con un tope en el caso del monopolio) pero niveles más bajos de esfuerzo y excedente social, este último dado por `\(p(e) Q-B(1+i)-e\)`.
+]
+
+---
+
+## Efecto de un incremento en el colateral
+
+- Evaluando en el mismo nivel de pago del prestamista:
+
+&lt;img src="img/figura_8.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+- Bajo competencia: mejores términos, esfuerzo más alto. 
+
+---
+
+class: separator-blue, middle
+
+# Default estratégico
+
+---
+
+## Default estratégico y el mercado de créditos
+
+
+- En esta sección no enfocamos en: opciones alternativas y préstamos de tamaño variable
+
+  - Función de producción: `\(Q=F(L)\)`.
+
+  - Pedir prestado `\(L\)` repetidamente para financiar capital de trabajo.
+
+  - Contrato estacionario `\((L, R)\)`.
+
+- ¿Pagar o no pagar?
+
+  - Si paga, obtiene `\([F(L)-R] /(1-\delta)\)`.
+
+  - Si existe default, obtiene `\(F(L)\)` hoy y `\(v\)` por período a partir de mañana.
+`$$F(L)+\delta \frac{v}{1-\delta}$$`
+
+---
+
+## Default estratégico y el mercado de créditos
+
+- La **restricción de no default**:
+`$$\frac{F(L)-R}{1-\delta} \geq F(L)+\delta \frac{v}{1-\delta}$$`
+
+- la que se puede simplificar a
+`$$\delta F(L)-R \geq \delta v, \text { or } R \leq \delta[F(L)-v]$$`
+
+- **Interpretaciones para `\(v\)`**:
+
+  - Pago de la alternativa una vez incluido en la lista negra del mercado de crédito:
+`$$v=F(\hat{L})-\hat{R} \text { para algunos otros valores }(\hat{L}, \hat{R}) .$$`
+
+   - Operaciones sin financiamiento:
+`$$v=F(0)$$`
+
+---
+
+## Pago del prestamista y restricción de no default
+
+- Si el prestamista obtiene un retorno libre de riesgo de `\(i\)`, su pago neto es `\(R=-(1+i)L\)`.
+
+&lt;img src="img/figura_9.png" width="48%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Pago del prestamista y restricción de no default
+
+- Superponiendo la restricción de no default:
+
+&lt;img src="img/figura_10.png" width="48%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Pago del prestamista y restricción de no default
+
+- Superponiendo la restricción de no default:
+
+&lt;img src="img/figura_11.png" width="48%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## El excedente social y el equilibrio del segundo mejor
+
+- El pago del prestatario es `\(F(L)-R\)`, el pago del prestamista es `\(R-(1+i) L\)`,
+
+  - donde `\(i\)` es la tasa de interés libre de riesgo.
+
+- Por tanto el **excedente total** es `\(=F(L)-(1+i) L\)`.
+
+  - El mismo que se maximiza cuando `\(L=L^{*}\)`, donde `\(F^{\prime}\left(L^{*}\right)=1+i\)`.
+
+- Suponemos que `\(L^{*}\)` es demasiado alto para cumplir automáticamente la restricción de no default.
+
+  - Es decir, `\(\delta F\left(L^{*}\right)-(1+i) L^{*}&lt;\delta v\)`.
+
+  - Idealmente, nos gustaría acercarnos lo más posible a `\(L^{*}\)`.
+
+---
+
+## El excedente social y el equilibrio del segundo mejor
+
+&lt;img src="img/figura_12.png" width="48%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## El excedente social y el equilibrio del segundo mejor
+
+&lt;img src="img/figura_13.png" width="48%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## El excedente social y el equilibrio del segundo mejor
+
+&lt;img src="img/figura_14.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+.content-box-red[
+**Teorema 3**: Los equilibrios con mayores ganancias del prestamista implican tasas de interés más altas, préstamos más bajos y un excedente social más bajo.
+]
+---
+
+## El excedente social y el equilibrio del segundo mejor
+
+Efecto de una caída en la **opción alternativa** `\(v\)`.
+
+- Competencia: tipo de interés `\(\downarrow, L \uparrow\)`.
+
+&lt;img src="img/figura_15.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## El excedente social y el equilibrio del segundo mejor
+
+Efecto de una caída en la **opción alternativa** `\(v\)`.
+
+- Monopolio: tipo de interés `\(\uparrow, L\)` sin cambios.
+
+&lt;img src="img/figura_16.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: separator-blue, middle
+
+# Mercados de crédito en economía en desarrollo
+
+---
+
+## Dos variantes de créditos especiales en países en desarrollo
+
+**Microfinanciamiento**
+
+- Todas nuestras ideas se aplican a las microfinanzas:
+
+  - selección adversa, riesgo moral, incumplimiento estratégico.
+
+- Las Organizaciones de Microcrédito utilizan varios dispositivos para sortear estos problemas:
+
+  - Préstamos grupales para averiguar a quién prestar.
+
+  - Reuniones y reembolsos frecuentes.
+
+  - Restringir los préstamos para capital de trabajo para evitar el incumplimiento estratégico.
+
+---
+
+## Dos variantes de créditos especiales en países en desarrollo
+
+Contratos interrelacionados.
+
+- Segmentación de mercado:
+
+  - El propietario prestan al arrendatario, el comerciante le presta a los agricultores, etc.
+
+- Razones para la interconexión:
+
+  - Garantía/Colateral no negociable en el mercado: Más fácil de aceptar si coincide con la ocupación.
+
+  - Cumplimiento de contrato: Amenaza doble ... eliminar relación principal + préstamos futuros.
+
+  - Cobertura de Costos Fijos. La promesa de que las ventas cubren los costos comerciales fijos.
+
+  - Eliminación de Distorsiones. Precios multidimensionales.
+
+---
+
+## Préstamos comerciales: Ejemplo de precio multidimensional
+
+- El prestatario pide prestado `\(L\)` y produce arroz según `\(Q=F(L)\)`.
+
+  - El precio de mercado del arroz es `\(p\)`.
+
+- El prestamista cobra una tasa de interés `\(r\)` e `\(i\)` es su tasa alternativa asegurada.
+
+  - El prestatario elige `\(L\)` (un tipo diferente de riesgo moral).
+
+  - El prestamista no puede "obligar" al prestatario a pedir prestado más de lo que quiere.
+
+---
+
+## Préstamos comerciales: Ejemplo de precio multidimensional
+
+¿Porqué créditos en efectivo son ineficientes?
+
+&lt;img src="img/figura_17.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Préstamos comerciales: Ejemplo de precio multidimensional
+
+&lt;img src="img/figura_18.png" width="75%" style="display: block; margin: auto;" /&gt;
+- El prestamista elige `\(r\)` para maximizar `\((r-i)L\)`
+
+  - El prestatario elige `\(L\)` para maximizar `\(pF(L)-(1+r)L\)`
+  
+  - **Existe subendeudamiento con respecto a `\(L^*\)`**.
+---
+
+## Contrato óptimo interrelacionado
+
+- **Relación comerciante-prestamista**
+
+  - Puede comprar la cosecha a precio `\(q\)` y cobra una tasa `\(r\)`.
+
+  - Elige `\((q, r)\)` para maximizar `\((p-q) F(L)+(r-i) L\)`
+
+  - Sabiendo que el prestatario elegirá `\(L\)` para maximizar `\(q F(L)-(1+r) L\)`.
+
+  - Debe respetar la opción externa del prestatario: `\(q F(L)-(1+r) L \geq B_0\)`.
+
+- **Solución**: imagine un "impuesto sobre las ganancias" `\(t\)` para un agricultor que accede a préstamos a una tasa de `\(i\)`
+
+  - `\(t\left[p F\left(L^{*}\right)-(1+i) L^{*}\right]=\)` pago del prestamista, con
+
+  - `\((1-t)\left[p F\left(L^{*}\right)-(1+i) L^{*}\right]=\)` pago del prestatario `\(=B_0\)`.
+
+- Debe ser óptimo si es implementable:
+
+  - ¡Pero es implementable si `\(q=t p\)` y `\((1+r)=t(1+i) !\)`
+
+---
+
+## Contrato óptimo interrelacionado
+
+&lt;img src="img/figura_19.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Contrato óptimo interrelacionado
+
+&lt;img src="img/figura_20.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
