@@ -303,10 +303,10 @@ Sitio web del autor: [https://debrajray.com](https://debrajray.com)
 
 | Grupo | Miembros | Paper 1 | Paper 2 |
 | --- | --- | --- | ---|
-| 1 | Contreras, Carlos; Espinosa, Matías; Sanhueza, Javier; Véliz, Nicole | ++2/++3 | |  
-| 2 | Barberán, Francisco; Espada, Esteban; Vilches, Matías; Urcullo, Javier | ++5 | |
-| 3 | Acosta, Belén; Cortes, Carolina; Díaz, Catalina; Vergara, Camila  |++4 | |
-| 4 | De la Rosa, Catalina; Neira, Kiara; Prado, Felipe; Vásquez, Francisco | ++1 | | |
+| 1 | Contreras, Carlos; Espinosa, Matías; Sanhueza, Javier; Véliz, Nicole | ++2/++3 | ++9 |  
+| 2 | Barberán, Francisco; Espada, Esteban; Vilches, Matías; Urcullo, Javier | ++5 | ++6 |
+| 3 | Acosta, Belén; Cortes, Carolina; Díaz, Catalina; Vergara, Camila  |++4 | ++7 |
+| 4 | De la Rosa, Catalina; Neira, Kiara; Prado, Felipe; Vásquez, Francisco | ++1 | ++8 | 
 
 -	K. Munshi and J. Myaux (2006), "Social Norms and the Fertility Transition," Journal of Development Economics 80, 1 - 38. **[++ 6]**
 
